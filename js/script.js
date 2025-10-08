@@ -291,6 +291,9 @@ document.addEventListener('DOMContentLoaded', () => {
   btnReiniciar.addEventListener('click', reiniciarJogo);
   btnConferir.addEventListener('click', () => {
     // rola até a lista de sorteados
+    const insereGanhador = prompt('Insira o nome do ganhador');
+    adicionarGanhador(insereGanhador);
+    
     if (elListaSorteados) elListaSorteados.scrollIntoView({ behavior: 'smooth', block: 'center' });
   });
 

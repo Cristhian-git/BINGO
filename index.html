@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bingo - Sorteador</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="container">
+<h1>Bingo — Sorteador</h1>
+
+
+<section class="display-area">
+<div class="circle" id="currentNumber">—</div>
+<div class="controls">
+<button id="drawBtn">Sortear pedra</button>
+<button id="resetBtn">Reiniciar jogo</button>
+<button id="showListBtn">Conferir números sorteados</button>
+</div>
+</section>
+
+
+<section id="listPanel" class="panel hidden">
+<h2>Números sorteados</h2>
+<ol id="drawnList" class="drawn-list"></ol>
+</section>
+
+
+<section class="winners-panel">
+<h2>Ganhadores (bings anteriores)</h2>
+<form id="winnerForm" class="winner-form">
+<input type="text" id="winnerName" placeholder="Nome do ganhador" required>
+<input type="date" id="winnerDate" required>
+<button type="submit">Adicionar ganhador</button>
+</form>
+<ul id="winnersList" class="winners-list"></ul>
+<div class="winners-actions">
+<button id="clearWinnersBtn" class="small">Limpar ganhadores</button>
+</div>
+</section>
+
+
+<footer class="note">
+<small>Dica: os ganhadores podem ser salvos no navegador (localStorage) ou enviados ao servidor — você decide a lógica.</small>
+</footer>
+</main>
+
+
+<!-- Conexão arquivo externo de lógica JavaScript (você irá criar esse arquivo) -->
+<script src="script.js" defer></script>
+</body>
+</html>

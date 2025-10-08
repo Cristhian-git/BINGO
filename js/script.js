@@ -272,8 +272,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     const nome = prompt(`Adicionar ganhador(a) para o número ${atual}. Digite o nome:`);
     if (!nome) return;
-    const data = prompt('Digite a data (YYYY-MM-DD) ou deixe em branco para usar a data atual:', dataAtualISO());
-    adicionarGanhador(nome, data || dataAtualISO());
+    const data = new Date()
+    adicionarGanhador(nome, data);
   });
 
   // Tecla "g" abre prompt para adicionar ganhador manual (qualquer hora)
@@ -281,8 +281,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (evt.key.toLowerCase() === 'g') {
       const nome = prompt('Adicionar ganhador(a) - digite o nome:');
       if (!nome) return;
-      //const data = prompt('Digite a data (YYYY-MM-DD) ou deixe em branco para usar a data atual:', dataAtualISO());
-      adicionarGanhador(nome, data || dataAtualISO());
+      const data = new Date()
+      adicionarGanhador(nome, data );
     }
   });
 

@@ -281,7 +281,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (evt.key.toLowerCase() === 'g') {
       const nome = prompt('Adicionar ganhador(a) - digite o nome:');
       if (!nome) return;
-      const data = prompt('Digite a data (YYYY-MM-DD) ou deixe em branco para usar a data atual:', dataAtualISO());
+      //const data = prompt('Digite a data (YYYY-MM-DD) ou deixe em branco para usar a data atual:', dataAtualISO());
       adicionarGanhador(nome, data || dataAtualISO());
     }
   });

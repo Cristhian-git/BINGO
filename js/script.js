@@ -292,7 +292,7 @@ document.addEventListener('DOMContentLoaded', () => {
   btnConferir.addEventListener('click', () => {
     // rola até a lista de sorteados
     const insereGanhador = prompt('Insira o nome do ganhador');
-    adicionarGanhador(insereGanhador, "08-10-2025");
+    adicionarGanhador(insereGanhador);
 
     if (elListaSorteados) elListaSorteados.scrollIntoView({ behavior: 'smooth', block: 'center' });
   });

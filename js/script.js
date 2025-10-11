@@ -20,7 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ----- Parâmetros do jogo -----
   const NUM_MINIMO = 1;
-  const NUM_MAXIMO = 75;
+ 
+  const pergunta = prompt('Qual a maior pedra a ser gritada nesse bingo?')
+  const NUM_MAXIMO = pergunta;
 
   // ----- Estado em memória -----
   let numerosSorteados = [];   // array com a ordem dos sorteios

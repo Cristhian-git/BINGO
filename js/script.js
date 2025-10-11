@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const elListaGanhadores = document.getElementById('listaGanhadores');
 
   // ----- Parâmetros do jogo -----
- 
+ // voltar numero e maximo e minimo se necessario;
   
 
 

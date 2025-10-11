@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const elListaGanhadores = document.getElementById('listaGanhadores');
 
   // ----- Parâmetros do jogo -----
-  const NUM_MINIMO = 1;
+ 
   
 
 
@@ -47,7 +47,8 @@ document.addEventListener('DOMContentLoaded', () => {
     numerosRestantes = [];
     numerosSorteados = [];
     const pergunta = prompt('Qual número máximo de pedras serão gritadas?')
-    NUM_MAXIMO = pergunta;
+    const NUM_MINIMO = 1;
+    const NUM_MAXIMO = pergunta;
     for (let i = NUM_MINIMO; i <= NUM_MAXIMO; i++) numerosRestantes.push(i);
   }
 

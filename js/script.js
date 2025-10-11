@@ -9,11 +9,6 @@
 // - #listaSorteados
 // - #listaGanhador
 
-function numeroBingo(){
-  const pergunta = prompt('Quantos numeros serão gritados nesse bingo?')
-const NUM_MAXIMO = pergunta;
-
-}
 
 document.addEventListener('DOMContentLoaded', () => {
   // ----- Elementos do DOM -----
@@ -26,7 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ----- Parâmetros do jogo -----
   const NUM_MINIMO = 1;
-numeroBingo();
+  
+
 
 
   // ----- Estado em memória -----
@@ -50,6 +46,8 @@ numeroBingo();
   function montarPiscinaNumeros() {
     numerosRestantes = [];
     numerosSorteados = [];
+    const pergunta = prompt('Qual número máximo de pedras serão gritadas?')
+    NUM_MAXIMO = pergunta;
     for (let i = NUM_MINIMO; i <= NUM_MAXIMO; i++) numerosRestantes.push(i);
   }
 
